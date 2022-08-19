@@ -101,6 +101,8 @@ header {
 }
 
 .btn_explore {
+    display: flex;
+    justify-content: center;
     border-radius: 50px;
     background-image: linear-gradient(#FF79DA, #9356DC);
     padding: 5px 10% 5px 10%;
