@@ -1055,6 +1055,16 @@ header a {
         left: 20px;
     }
 
+    input:hover~.fa-regular.fa-heart {
+        transition-duration: 0.5s;
+        opacity: 0;
+    }
+    
+    input:hover~.fa-solid.fa-heart {
+        transition-duration: 0,5s;
+        opacity: 1;
+    }
+
     /* PAGES RESTAURANTS DESKTOP */
 
     /* HEADER */
