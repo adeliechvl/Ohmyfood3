@@ -229,10 +229,10 @@ header {
 }
 
 .icon_coeur_accueil {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 input {
@@ -265,7 +265,7 @@ input:checked~.fa-regular.fa-heart {
 }
 
 input:checked~.fa-solid.fa-heart {
-    transition-duration: 0, 5s;
+    transition-duration: 0,5s;
     opacity: 1;
 }
 
@@ -347,6 +347,28 @@ header a {
     font-family: 'Shrikhand';
     font-weight: 400;
     margin-top: 30px;
+}
+
+.coeur_menu {
+    position: relative;
+    top: 5px;
+    right: 30%;
+
+}
+.fa-regular.fa-heart.menu, .fa-solid.fa-heart.menu {
+    height: 25px;
+}
+
+.fa-regular.fa-heart.menu {
+    position: relative;
+    top: 3px;
+    right: 15px;
+}
+
+.fa-solid.fa-heart.menu {
+    position: relative;
+    top: 3px;
+    right: 44px;
 }
 
 .entrées h2,
@@ -553,12 +575,6 @@ header a {
     .icon_coeur_accueil {
         bottom: 70px;
         right: 30px;
-    }
-
-    .icon_coeur_pages {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
     }
 
     input {
@@ -786,12 +802,6 @@ header a {
         height: 25px;
         top: 230px;
         right: 1%;
-    }
-
-    .icon_coeur_pages {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
     }
 
     input {
@@ -1039,12 +1049,6 @@ header a {
         height: 25px;
         top: 230px;
         right: 5%;
-    }
-
-    .icon_coeur_pages {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
     }
 
     input {
