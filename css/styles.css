@@ -419,6 +419,7 @@ header a {
     margin-right: 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    cursor: pointer;
 }
 
 .card_plat:hover i {
