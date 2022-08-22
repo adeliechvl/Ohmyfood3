@@ -1,0 +1,14 @@
+.btn_explore {
+    @include flexcenter;
+    background-image: linear-gradient ($secondary-color, $primary-color);
+}
+
+.choose i:hover, .compose i:hover, taste i:hover {
+    color: $primary-color;
+}
+
+.btn_nouveau p {
+    margin: $margin-none;
+    font-weight: 600;
+    color: #098633;
+}

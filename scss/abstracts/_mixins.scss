@@ -1,0 +1,24 @@
+ @mixin flexcenter {
+    display: flex;
+    justify-content: center;
+ }
+
+ @mixin flexbetween {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ @mixin flexbaseline {
+   display: flex;
+   align-content: baseline;
+ }
+
+ @mixin flexwrapevenly {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+ 
+ @mixin fullwidth {
+    width: 100%;
+ }
