@@ -335,7 +335,6 @@ header a {
     border-top-right-radius: 40px;
     background-color: #f0f0f0;
     position: relative;
-    bottom: 50px;
 }
 
 .titre_menu {
@@ -459,12 +458,18 @@ header a {
     background-image: linear-gradient(#FF79DA, #9356DC);
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 60px;
+    margin-bottom: 80px;
     color: white;
     font-weight: 100;
     box-shadow: 0 2px 15px 2px rgb(180, 179, 179);
 }
 
-
+.btn_commander h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
 
 /* ---VERSION MOBILE---*/
 
@@ -592,6 +597,10 @@ header a {
         right: 18%;
     }
 
+    .img_restaurant {
+        height: 215px;
+    }
+
     .img_restaurant img {
         height: 250px;
     }
@@ -637,19 +646,6 @@ header a {
 
     .prix {
         font-size: small;
-    }
-
-    /* SECTION COMMANDER */
-
-    .btn_commander {
-        margin-top: 10px;
-        margin-bottom: 60px;
-    }
-
-    .btn_commander h3 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-weight: 300;
     }
 }
 
@@ -835,17 +831,17 @@ header a {
         top: 8px;
     }
 
+    .img_restaurant {
+        height: 300px;
+    }
+
     .img_restaurant img {
         width: 100%;
         height: 350px;
         object-fit: cover;
     }
 
-    /* SECTION MENU */
-
-    .menu {
-        height: 1500px;
-    }
+    /* SECTION MENU */  
 
     .titre_menu {
         justify-content: center;
@@ -895,19 +891,6 @@ header a {
 
     .prix {
         font-size: 15px;
-    }
-
-    /* SECTION COMMANDER */
-
-    .btn_commander {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .btn_commander h3 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-weight: 300;
     }
 }
 
@@ -1101,6 +1084,10 @@ header a {
         width: 45%;
     }
 
+    .img_restaurant {
+        height: 400px;
+    }
+
     .img_restaurant img {
         width: 100%;
         height: 450px;
@@ -1108,10 +1095,6 @@ header a {
     }
 
     /* SECTION MENU */
-
-    .menu {
-        height: 1500px;
-    }
 
     .titre_menu {
         justify-content: center;
@@ -1161,18 +1144,4 @@ header a {
     .prix p {
         font-size: 17px;
     }
-
-    /* SECTION COMMANDER */
-
-    .btn_commander {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .btn_commander p {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-weight: 300;
-    }
-
 }
