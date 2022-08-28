@@ -54,7 +54,7 @@ body {
 }
 
 .card_restaurant {
-    background-color: $white;
+    background-color: $bgcolor2;
     border-radius: $border;
     box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
 
@@ -74,7 +74,7 @@ body {
 .titres_restaurants h4 {
     margin: $margin-none;
     padding: 0 0 10px 8%;
-    color: $black;
+    color: $color4;
 }
 
 .icon_coeur_accueil {
@@ -94,7 +94,7 @@ body {
 
 .fa-regular.fa-heart {
     font-size: $size25;
-    color: $rgb139;
+    color: $icon-color;
 }
 
 .fa-solid.fa-heart {
@@ -126,13 +126,13 @@ footer {
         font-size: 20px;
         font-weight: 100;
         width: 160px;
-        color: $white;
+        color: $bgcolor2;
         margin: $margin-none;
         padding: 20px 0 5px 5%;
     }
 
     & p {
-        color: $white;
+        color: $bgcolor2;
         margin: $margin-none;
         padding: 10px 0 0 5%;
     }
@@ -147,7 +147,7 @@ footer {
 .partnership {
     display: flex;
     align-items: baseline;
-    color: $white;
+    color: $bgcolor2;
     padding: 10px 0 0 5%;
 }
 
@@ -164,7 +164,7 @@ footer {
 /* ELEMENTS DE LA PAGE */
 
 body a {
-    color: $black;
+    color: $color4;
 }
 
 /* HEADER */
@@ -228,7 +228,7 @@ header a {
     @include flexbetween;
     margin: 20px 3% 10px 3%;
     padding-left: 3%;
-    background-color: $white;
+    background-color: $bgcolor2;
     border-radius: $border;
     box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
     overflow: hidden;
@@ -250,7 +250,7 @@ header a {
     & i {
         width: $border;
         padding: 5px;
-        background-color: $white;
+        background-color: $bgcolor2;
         border-radius: $border;
     }
 }
@@ -297,7 +297,7 @@ header a {
     background-image: linear-gradient($secondary-color, $primary_color);
     padding-left: 10%;
     padding-right: 10%;
-    color: $white;
+    color: $bgcolor2;
     font-weight: 100;
     box-shadow: 0 2px $border 2px rgb(180, 179, 179);
 }
