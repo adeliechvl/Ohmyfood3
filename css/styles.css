@@ -137,7 +137,8 @@ header {
 .taste i {
     color: rgb(139, 139, 139);
     font-size: 20px;
-    width: 23px;
+    width: 30px;
+    padding-left: 10px;
 }
 
 .choose h3,
@@ -519,7 +520,7 @@ header a {
     }
 
     .titres_réserver h1 {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     /* SECTION FONCTIONNEMENT */
@@ -533,12 +534,13 @@ header a {
     .compose,
     .taste {
         margin-bottom: 20px;
+        width: 97%;
     }
 
     .choose h3,
     .compose h3,
     .taste h3 {
-        font-size: medium;
+        font-size: 18px;
     }
 
     /* SECTION RESTAURANTS */
