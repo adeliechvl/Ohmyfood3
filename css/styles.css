@@ -151,6 +151,7 @@ header {
 .compose:hover,
 .taste:hover {
     background-color: #fcf0ff;
+    box-shadow: 0 8px 8px 0 rgb(196, 196, 196);
 }
 
 .choose i:hover,
