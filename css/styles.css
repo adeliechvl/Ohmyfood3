@@ -611,11 +611,11 @@ header a {
     /* SECTION MENU */
 
     .menu {
-       height: 1000px;
+       height: 1050px;
     }
 
     .menu_la_note_enchantée {
-        height: 1090px;
+        height: 1140px;
     }
 
     .titre_menu {
@@ -637,14 +637,17 @@ header a {
     .card_plat h3,
     .card_plat h4 {
         margin: 5px 0 5px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
     }
 
     .card_plat h3 {
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .card_plat h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .card_plat_com {
@@ -652,7 +655,7 @@ header a {
     }
 
     .prix {
-        font-size: small;
+        font-size: 15px;
     }
 }
 
