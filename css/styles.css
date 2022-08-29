@@ -332,7 +332,8 @@ header a {
 
 /* SECTION MENU */
 
-.menu, .menu_la_note_enchantée {
+.menu,
+.menu_la_note_enchantée {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: #f0f0f0;
@@ -356,7 +357,9 @@ header a {
     right: 30%;
 
 }
-.fa-regular.fa-heart.menu, .fa-solid.fa-heart.menu {
+
+.fa-regular.fa-heart.menu,
+.fa-solid.fa-heart.menu {
     height: 25px;
 }
 
@@ -373,6 +376,45 @@ header a {
 }
 
 /* RESTAURANTS */
+
+.card_plat.entrée {
+    animation-name: apparition;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-delay: 0,2s;
+    animation-duration: 2s;
+    transition: linear;
+}
+
+.card_plat.plat {
+    animation-name: apparition;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-delay: 0,6s;
+    animation-duration: 2s;
+    transition: linear;
+}
+
+.card_plat.dessert {
+    animation-name: apparition;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-delay: 0,9s;
+    animation-duration: 2s;
+    transition: linear;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 
 .entrées h2,
 .plats h2,
@@ -611,7 +653,7 @@ header a {
     /* SECTION MENU */
 
     .menu {
-       height: 1050px;
+        height: 1050px;
     }
 
     .menu_la_note_enchantée {
@@ -854,7 +896,7 @@ header a {
         object-fit: cover;
     }
 
-    /* SECTION MENU */  
+    /* SECTION MENU */
 
     .titre_menu {
         justify-content: center;
@@ -1058,7 +1100,7 @@ header a {
         transition-duration: 0.5s;
         opacity: 0;
     }
-    
+
     input:hover~.fa-solid.fa-heart {
         transition-duration: 0,5s;
         opacity: 1;
