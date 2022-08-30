@@ -267,7 +267,7 @@ input:checked~.fa-regular.fa-heart {
 }
 
 input:checked~.fa-solid.fa-heart {
-    transition-duration: 0,5s;
+    transition-duration: 0, 5s;
     opacity: 1;
 }
 
@@ -376,40 +376,71 @@ header a {
 
 /* RESTAURANTS */
 
-.card_plat.entrée {
+.card_plat.item1,
+.card_plat.item2,
+.card_plat.item3,
+.card_plat.item4,
+.card_plat.item5,
+.card_plat.item6,
+.card_plat.item7,
+.card_plat.item8,
+.card_plat.item9,
+.card_plat.item10 {
     animation-name: apparition;
     animation-direction: reverse;
     animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-delay: 0,2s;
     animation-duration: 2s;
     transition: linear;
 }
 
-.card_plat.plat {
-    animation-name: apparition;
-    animation-direction: reverse;
-    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-delay: 0,6s;
-    animation-duration: 2s;
-    transition: linear;
+.card_plat.item1 {
+    animation-delay: .2s;
 }
 
-.card_plat.dessert {
-    animation-name: apparition;
-    animation-direction: reverse;
-    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-delay: 0,9s;
-    animation-duration: 2s;
-    transition: linear;
+.card_plat.item2 {
+    animation-delay: .4s;
 }
+
+.card_plat.item3 {
+    animation-delay: .6s;
+}
+
+.card_plat.item4 {
+    animation-delay: .8s;
+}
+
+.card_plat.item5 {
+    animation-delay: 1s;
+}
+
+.card_plat.item6 {
+    animation-delay: 1.2s;
+}
+
+.card_plat.item7 {
+    animation-delay: 1.4s;
+}
+
+.card_plat.item8 {
+    animation-delay: 1.6s;
+}
+
+.card_plat.item9 {
+    animation-delay: 1.8s;
+}
+
+.card_plat.item10 {
+    animation-delay: 2s;
+}
+
 
 @keyframes apparition {
     from {
         opacity: 1;
-        transform: translateY(-5px);
     }
 
     to {
+        transform: translateY(5px);
         opacity: 0;
     }
 }
@@ -680,7 +711,7 @@ header a {
         margin: 5px 0 5px 0;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .card_plat h3 {
@@ -1101,7 +1132,7 @@ header a {
     }
 
     input:hover~.fa-solid.fa-heart {
-        transition-duration: 0,5s;
+        transition-duration: 0, 5s;
         opacity: 1;
     }
 
