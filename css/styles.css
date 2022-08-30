@@ -433,7 +433,6 @@ header a {
     animation-delay: 2s;
 }
 
-
 @keyframes apparition {
     from {
         opacity: 1;
@@ -444,7 +443,6 @@ header a {
         opacity: 0;
     }
 }
-
 
 .entrées h2,
 .plats h2,
@@ -462,7 +460,6 @@ header a {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
-    overflow: hidden;
 }
 
 .card_plat p {
@@ -477,6 +474,8 @@ header a {
     justify-content: center;
     color: #99E2D0;
     background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin-right: -20%;
 }
 
@@ -502,6 +501,7 @@ header a {
 
 .card_plat_com {
     padding: 7px 0 7px 0;
+    overflow-x: hidden;
 }
 
 .prix {
@@ -902,6 +902,7 @@ header a {
         position: relative;
         top: 20px;
     }
+
     header a {
         font-weight: 500;
         font-size: 20px;
