@@ -355,7 +355,6 @@ header a {
     position: relative;
     top: 5px;
     right: 30%;
-
 }
 
 .fa-regular.fa-heart.menu,
@@ -435,7 +434,7 @@ header a {
     overflow: hidden;
 }
 
-.card_plat h4 {
+.card_plat p {
     font-weight: 100;
 }
 
@@ -677,7 +676,7 @@ header a {
     }
 
     .card_plat h3,
-    .card_plat h4 {
+    .card_plat p {
         margin: 5px 0 5px 0;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -688,7 +687,7 @@ header a {
         font-size: 19px;
     }
 
-    .card_plat h4 {
+    .card_plat p {
         font-size: 16px;
     }
 
@@ -927,7 +926,7 @@ header a {
     }
 
     .card_plat h3,
-    .card_plat h4 {
+    .card_plat p {
         margin: 5px 0 5px 0;
     }
 
@@ -935,7 +934,7 @@ header a {
         font-size: 20px;
     }
 
-    .card_plat h4 {
+    .card_plat p {
         font-size: 17px;
     }
 
@@ -1180,7 +1179,7 @@ header a {
     }
 
     .card_plat h3,
-    .card_plat h4 {
+    .card_plat p {
         margin: 5px 0 5px 0;
     }
 
@@ -1188,7 +1187,7 @@ header a {
         font-size: 20px;
     }
 
-    .card_plat h4 {
+    .card_plat p {
         font-size: 17px;
     }
 
