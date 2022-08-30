@@ -262,12 +262,12 @@ input {
 }
 
 input:checked~.fa-regular.fa-heart {
-    transition-duration: 0.5s;
+    transition-duration: .5s;
     opacity: 0;
 }
 
 input:checked~.fa-solid.fa-heart {
-    transition-duration: 0, 5s;
+    transition-duration: .5s;
     opacity: 1;
 }
 
@@ -376,6 +376,8 @@ header a {
 
 /* RESTAURANTS */
 
+/* ANIMATION APPARITION */
+
 .card_plat.item1,
 .card_plat.item2,
 .card_plat.item3,
@@ -439,7 +441,7 @@ header a {
     }
 
     to {
-        transform: translateY(5px);
+        transform: translateY(7px);
         opacity: 0;
     }
 }
@@ -460,6 +462,7 @@ header a {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
+    overflow: hidden;
 }
 
 .card_plat p {
@@ -1121,12 +1124,12 @@ header a {
     }
 
     input:hover~.fa-regular.fa-heart {
-        transition-duration: 0.5s;
+        transition-duration: .5s;
         opacity: 0;
     }
 
     input:hover~.fa-solid.fa-heart {
-        transition-duration: 0, 5s;
+        transition-duration: .5s;
         opacity: 1;
     }
 
