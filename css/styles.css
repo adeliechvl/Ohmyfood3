@@ -740,8 +740,10 @@ header a {
 
     /* HEADER */
 
-    header {
-        padding: 20px 0 20px 0;
+    header img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 35%;
     }
 
     /* SECTION LOCALISATION */
@@ -896,19 +898,10 @@ header a {
 
     /* HEADER */
 
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    header i {
+        position: relative;
+        top: 20px;
     }
-
-    header img {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        width: 45%;
-    }
-
     header a {
         font-weight: 500;
         font-size: 20px;
@@ -1159,14 +1152,12 @@ header a {
         font-weight: 500;
         font-size: 20px;
         position: relative;
-        right: 25%;
-        top: 20px;
+        right: 30%;
+        top: 10px;
     }
 
     header img {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        width: 45%;
+        width: 30%;
     }
 
     .img_restaurant {
