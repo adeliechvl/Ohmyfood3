@@ -113,8 +113,9 @@ header {
 }
 
 .btn_explore p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -136,15 +137,14 @@ header {
 .compose i,
 .taste i {
     color: rgb(139, 139, 139);
-    font-size: 20px;
-    width: 30px;
-    padding-left: 10px;
+    font-size: 15px;
+    width: 20px;
 }
 
 .choose h3,
 .compose h3,
 .taste h3 {
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
 }
 
 .choose:hover,
@@ -161,19 +161,19 @@ header {
 }
 
 #fonctionnement p {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 8px 4px 9px;
     background-color: #9356DC;
     color: white;
     border-radius: 15px;
     position: relative;
     right: 15px;
+    font-size: 12px;
 }
 
 /* SECTION RESTAURANTS */
 
 #restaurants {
     background-color: #f0f0f0;
-    margin-top: 50px;
 }
 
 #restaurants h2 {
@@ -196,14 +196,15 @@ header {
     width: 80px;
     display: flex;
     justify-content: center;
-    padding: 7px 3px 7px 3px;
+    padding: 5px 1px 5px 1px;
     background-color: #99E2D0;
     border-radius: 3px;
     position: relative;
-    left: 75%;
 }
 
 .btn_nouveau p {
+    display: flex;
+    justify-content: center;
     margin: 0;
     font-weight: 600;
     color: #098633;
@@ -226,7 +227,7 @@ header {
 .titres_restaurant h3,
 .titres_restaurant h4 {
     margin: 0;
-    padding: 0 0 10px 8%;
+    padding: 0 0 7px 8%;
     color: black;
 }
 
@@ -280,12 +281,12 @@ footer {
 
 footer h2 {
     font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 100;
     width: 160px;
     color: white;
     margin: 0;
-    padding: 20px 0 5px 5%;
+    padding: 20px 0 10px 5%;
 }
 
 .suggest,
@@ -557,7 +558,7 @@ header a {
     /* ELEMENTS DE LA PAGE */
 
     body {
-        width: 425px;
+        max-width: 425px;
     }
 
     /* HEADER */
@@ -592,42 +593,40 @@ header a {
     /* SECTION RESERVER */
 
     .réserver a {
-        width: 75%;
+        width: 80%;
     }
 
     .titres_réserver h1 {
-        font-size: 27px;
+        font-size: 20px;
+    }
+
+    .titres_réserver p {
+        font-size: 12px;
     }
 
     /* SECTION FONCTIONNEMENT */
 
     #fonctionnement {
-        margin: 50px 5% 70px 7%;
-        height: 300px;
+        margin: 50px 5% 50px 7%;
     }
 
     .choose,
     .compose,
     .taste {
         margin-bottom: 20px;
-        width: 97%;
     }
 
     .choose h3,
     .compose h3,
     .taste h3 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     /* SECTION RESTAURANTS */
 
-    #restaurants {
-        height: 1300px;
-    }
-
     .card_restaurant {
-        height: 250px;
-        margin: 0 5% 20px 5%;
+        height: 240px;
+        margin: 0 5% 0 5%;
     }
 
     .card_restaurant img {
@@ -636,10 +635,12 @@ header a {
 
     .btn_nouveau {
         bottom: 160px;
+        left: 67%;
     }
 
     .btn_nouveau p {
-        font-size: small;
+        font-size: 4px;
+        width: 40px;
     }
 
     .com_card_restaurant {
@@ -647,20 +648,23 @@ header a {
     }
 
     .titres_restaurant {
-        width: 50%;
+        width: 60%;
     }
 
     .titres_restaurant h3 {
+        font-size: 16px;
         font-weight: 700;
+        margin-top: 3px;
     }
 
     .titres_restaurant h4 {
-        font-weight: 300;
+        font-size: 15px;
+        font-weight: 100;
     }
 
     .icon_coeur_accueil {
-        bottom: 70px;
-        right: 30px;
+        bottom: 50px;
+        right: 10px;
     }
 
     input {
