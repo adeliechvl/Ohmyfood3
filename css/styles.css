@@ -352,10 +352,16 @@ header a {
     margin-top: 30px;
 }
 
+.icon_coeur_page {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 25px;
+}
+
 .coeur_menu {
     position: relative;
     top: 5px;
-    right: 30%;
 }
 
 .fa-regular.fa-heart.menu,
@@ -365,14 +371,13 @@ header a {
 
 .fa-regular.fa-heart.menu {
     position: relative;
-    top: 3px;
-    right: 15px;
+    bottom: 25px;
 }
 
 .fa-solid.fa-heart.menu {
     position: relative;
-    top: 3px;
-    right: 44px;
+    bottom: 51px;
+    left: 2%;
 }
 
 /* RESTAURANTS */
@@ -574,7 +579,7 @@ header a {
         font-weight: 500;
         font-size: 20px;
         position: relative;
-        right: 20%;
+        left: 40%;
         top: 5px;
     }
 
@@ -694,7 +699,7 @@ header a {
     }
 
     .menu_la_note_enchantée {
-        height: 1140px;
+        height: 1080px;
     }
 
     .titre_menu {
@@ -702,7 +707,9 @@ header a {
     }
 
     .titre_menu h1 {
-        font-size: 28px;
+        width: 78%;
+        font-size: 25px;
+        padding: 0 0 0 5%;
     }
 
     .entrées h2,
@@ -722,11 +729,11 @@ header a {
     }
 
     .card_plat h3 {
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .card_plat p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .card_plat_com {
@@ -735,6 +742,10 @@ header a {
 
     .prix {
         font-size: 15px;
+    }
+
+    .btn_commander h3 {
+        font-size: 14px;
     }
 }
 
@@ -934,6 +945,7 @@ header a {
 
     .titre_menu h1 {
         font-size: 30px;
+        margin-right: 20px;
     }
 
     .entrées,
@@ -1186,6 +1198,7 @@ header a {
 
     .titre_menu h1 {
         font-size: 30px;
+        margin-right: 20px;
     }
 
     .entrées,
