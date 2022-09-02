@@ -131,6 +131,7 @@ header {
     box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
     padding-top: 5px;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .choose i,
@@ -290,6 +291,17 @@ footer h2 {
     padding: 20px 0 10px 5%;
 }
 
+footer p {
+    color: white;
+    margin: 0;
+    padding: 10px 0 0 5%;
+}
+
+footer i {
+    width: 15px;
+    font-size: 10px;
+}
+
 .suggest,
 .partnership {
     display: flex;
@@ -305,18 +317,6 @@ footer h2 {
     font-size: 17px;
     font-weight: 500;
 }
-
-footer p {
-    color: white;
-    margin: 0;
-    padding: 10px 0 0 5%;
-}
-
-footer i {
-    width: 15px;
-    font-size: 10px;
-}
-
 
 /* ---PAGES RESTAURANTS--- */
 
@@ -1123,6 +1123,7 @@ header a {
 
     .titres_restaurant {
         width: 80%;
+        margin-top: 10px;
     }
 
     .titres_restaurant h3 {
