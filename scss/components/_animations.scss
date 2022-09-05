@@ -1,0 +1,182 @@
+/* ANIMATION COEUR HOME*/
+
+.icon_coeur_accueil {
+    @include flexcenter;
+    align-content: flex-end;
+    position: relative;
+}
+
+.input {
+    position: relative;
+    opacity: $none;
+    width: $width1;
+    height: $width1;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.fa-regular.fa-heart {
+    font-size: $width2;
+    color: $icon-color;
+}
+
+.fa-solid.fa-heart {
+    font-size: $width2;
+    opacity: $none;
+    background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    right: $width2;
+}
+
+input:checked~.fa-regular.fa-heart {
+    transition-duration: .5s;
+    opacity: $none;
+}
+
+input:checked~.fa-solid.fa-heart {
+    transition-duration: .5s;
+    opacity: $opacity
+}
+
+/* VERSION MOBILE */
+
+.icon_coeur_accueil {
+    bottom: 50px;
+    right: 10px;
+}
+
+input {
+    left: $width2;
+}
+
+/* VERSIONS TABLETTE */
+
+.icon_coeur_accueil {
+    width: 2px;
+    height: $width2;
+    top: 230px;
+    right: 1%;
+}
+
+input {
+    left: 20px;
+}
+
+/* VERSION DESKTOP */
+
+.icon_coeur_accueil {
+    width: 2px;
+    height: $width2;
+    top: 230px;
+    right: 5%;
+}
+
+input {
+    left: 20px;
+}
+
+input:hover~.fa-regular.fa-heart {
+    transition-duration: .5s;
+    opacity: $none;
+}
+
+input:hover~.fa-solid.fa-heart {
+    transition-duration: .5s;
+    opacity: $opacity;
+}
+
+/* ANIMATION COEUR MENUS*/
+
+.card_plat:hover .icon {
+    opacity: $opacity;
+    margin-right: $none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.card_plat:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+.card_plat_com {
+    padding: 7px 0 7px 0;
+    overflow-x: hidden;
+}
+
+
+
+
+/* ANIMATION APPARITION */
+
+.card_plat.item1,
+.card_plat.item2,
+.card_plat.item3,
+.card_plat.item4,
+.card_plat.item5,
+.card_plat.item6,
+.card_plat.item7,
+.card_plat.item8,
+.card_plat.item9,
+.card_plat.item10 {
+    animation-name: apparition;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    transition: linear;
+}
+
+.card_plat.item1 {
+    animation-delay: .2s;
+}
+
+.card_plat.item2 {
+    animation-delay: .4s;
+}
+
+.card_plat.item3 {
+    animation-delay: .6s;
+}
+
+.card_plat.item4 {
+    animation-delay: .8s;
+}
+
+.card_plat.item5 {
+    animation-delay: 1s;
+}
+
+.card_plat.item6 {
+    animation-delay: 1.2s;
+}
+
+.card_plat.item7 {
+    animation-delay: 1.4s;
+}
+
+.card_plat.item8 {
+    animation-delay: 1.6s;
+}
+
+.card_plat.item9 {
+    animation-delay: 1.8s;
+}
+
+.card_plat.item10 {
+    animation-delay: 2s;
+}
+
+@keyframes apparition {
+    from {
+        opacity: $opacity;
+    }
+
+    to {
+        transform: translateY(7px);
+        opacity: $none;
+    }
+}

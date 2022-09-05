@@ -1,0 +1,99 @@
+header {
+    @include flexcenter;
+    width: $full;
+}
+
+header a {
+    position: relative;
+}
+
+
+/* ---VERSION MOBILE---*/
+
+@media (max-width: 425px) {
+
+    header img {
+        margin-top: 20px;
+        width: 170px;
+        margin-bottom: 10px;
+
+        & i {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            position: relative;
+            right: 40%;
+            top: 5px;
+        }
+    }
+
+    /* ---PAGES RESTAURANTS MOBILE--- */
+
+    header a {
+        right: 18%;
+    }
+}
+
+
+/* ---VERSION TABLETTE--- */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    header img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 35%;
+    }
+
+    /* ---PAGES RESTAURANTS TABLETTE---*/
+
+    header i {
+        position: relative;
+        top: 20px;
+    }
+
+    header a {
+        font-weight: 500;
+        font-size: 20px;
+        right: 22%;
+        top: 8px;
+    }
+}
+
+
+/* VERSION DESKTOP */
+
+@media (min-width: 769px) {
+
+    header {
+        padding: 20px 0 20px 0;
+    }
+
+    /* PAGES RESTAURANTS DESKTOP */
+
+    header {
+        @include flexcenter;
+        align-items: center;
+        width: $full;
+
+        & a {
+            font-weight: 500;
+            font-size: 20px;
+            right: 20%;
+            bottom: 20px;
+        }
+
+        & i {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            position: relative;
+            right: 30%;
+            top: 10px;
+        }
+
+        & img {
+            width: 30%;
+        }
+    }
+}

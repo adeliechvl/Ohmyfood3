@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+
+    img {
+        width: $full;
+        object-fit: cover;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+#localisation div {
+    @include flexcenter;
+    width: $full;
+}
+
+#localisation div {
+    align-items: baseline;
+    background-color: #dfdfdf;
+    box-shadow: inset 0 3px 3px 0 rgb(180, 179, 179);
+}
+
+.réserver {
+    @include flexcenter;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 10%;
+    align-items: center;
+}
+
+.titres_réserver {
+    text-align: center;
+    margin-bottom: $width1;
+}
+
+#fonctionnement p {
+    padding: 5px 8px 4px 9px;
+    background-color: $secondary-color;
+    color: $bgcolor2;
+    border-radius: $width1;
+    position: relative;
+    right: $width1;
+    font-size: 12px;
+}
+
+#restaurants {
+    background-color: $bgcolor1;
+    margin-top: 50px;
+
+    & h2 {
+        margin: 0 5% 0 5%;
+        padding: 50px 0 20px 0;
+    }
+}
+
+.card_restaurant {
+    background-color: $bgcolor2;
+    border-radius: $width1;
+    box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
+
+    & img {
+        border-top-left-radius: $width1;
+        border-top-right-radius: $width1;
+    }
+}
+
+.com_card_restaurant {
+    height: 65px;
+    @include flexbetween;
+    position: relative;
+}
+
+.com_card_restaurant_notnew {
+    height: 65px;
+    @include flexbetween;
+    margin-top: 10px;
+}
+
+.titres_restaurants h3,
+.titres_restaurants h4 {
+    margin: $none;
+    padding: 0 0 10px 8%;
+    color: $color4;
+}
+
+
+/* ---VERSION MOBILE---*/
+
+@media (max-width: 425px) {
+
+    /* ELEMENTS DE LA PAGE */
+
+    body {
+        width: 425px;
+    }
+
+    /* SECTION LOCALISATION */
+
+    #localisation div i {
+        margin-right: 3%;
+    }
+
+    #localisation div h2 {
+        margin: $width1 0 $width1 0;
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    /* SECTION RESERVER */
+
+    .réserver a {
+        width: 80%;
+    }
+
+    .titres_réserver h1 {
+        font-size: 20px;
+    }
+
+    .titres_réserver p {
+        font-size: 12px;
+    }
+
+    /* SECTION FONCTIONNEMENT */
+
+    #fonctionnement {
+        margin: 50px 5% 50px 7%;
+    }
+
+    .choose,
+    .compose,
+    .taste {
+        margin-bottom: 20px;
+    }
+
+    .choose h3,
+    .compose h3,
+    .taste h3 {
+        font-size: $width1;
+    }
+
+    /* SECTION RESTAURANTS */
+
+    .card_restaurant {
+        height: 240px;
+        margin: 0 5% 0 5%;
+
+        & img {
+            height: 170px;
+        }
+    }
+
+    .com_card_restaurant {
+        bottom: 20px;
+    }
+
+    .titres_restaurant {
+        width: 60%;
+
+        & h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 3px;
+        }
+
+        & h4 {
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+}
+
+
+/* ---VERSION TABLETTE--- */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    /* SECTION LOCALISATION */
+
+    #localisation div i {
+        margin-right: 3%;
+    }
+
+    #localisation div p {
+        font-weight: 900;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+
+    /* SECTION RESERVER */
+
+    .réserver {
+        padding: 2%;
+
+        & a {
+            width: 240px;
+        }
+    }
+
+    .titres_réserver h1 {
+        font-size: $width1;
+        margin: $none;
+    }
+
+    .titres_réserver p {
+        font-size: 17px;
+    }
+
+    /* SECTION FONCTIONNEMENT */
+
+    #fonctionnement {
+        margin: 20px 5% 20px 5%;
+        @include flexwrapevenly;
+        align-content: center;
+
+        & h2 {
+            width: $full;
+            height: 30px;
+            font-size: $width1;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    /* SECTION RESTAURANTS */
+
+    #restaurants {
+        height: 800px;
+        @include flexwrapevenly;
+
+        & h2 {
+            width: $full;
+            height: 20px;
+            font-size: $width2
+        }
+
+        & a {
+            width: 45%;
+            margin: 0 0 0 2%;
+        }
+    }
+
+    .card_restaurant {
+        height: 300px;
+        margin: 10px 2% 20px 2%;
+
+        & img {
+            height: 200px;
+            width: $full;
+            object-fit: cover;
+        }
+    }
+
+    .com_card_restaurant {
+        bottom: 20px;
+        align-content: center;
+    }
+
+    .titres_restaurant {
+        width: 75%;
+
+        & h3 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        & h4 {
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+
+    .titres_restaurant h3,
+    .titres_restaurant h4 {
+        padding: 0 0 5px 4%;
+    }
+}
+
+
+/* VERSION DESKTOP */
+
+@media (min-width: 769px) {
+
+    /* SECTION LOCALISATION */
+
+    #localisation div i {
+        margin-right: 3%;
+        font-size: 20px;
+    }
+
+    #localisation div p {
+        font-weight: 900;
+        font-size: 25px;
+        margin: 10px 0 10px 0;
+    }
+
+    /* SECTION RESERVER */
+
+    .réserver {
+        padding: 2%;
+
+        & a {
+            width: 250px;
+            @include flexcenter;
+        }
+    }
+
+    .titres_réserver h1 {
+        font-size: 30px;
+        margin: $none;
+    }
+
+    .titres_réserver p {
+        font-size: 20px;
+    }
+
+    /* SECTION FONCTIONNEMENT */
+
+    #fonctionnement {
+        margin: 0 2% 0 2%;
+        @include flexwrapevenly;
+
+        & h2 {
+            width: $full;
+            height: 20px;
+            font-size: $width2;
+            margin-left: 3%;
+        }
+    }
+
+    /* SECTION RESTAURANTS */
+
+    #restaurants {
+        height: 800px;
+        @include flexwrapevenly;
+
+        & h2 {
+            width: $full;
+            height: 20px;
+            font-size: $width2;
+        }
+
+        & a {
+            width: 45%;
+            margin: 0;
+        }
+    }
+
+    .card_restaurant {
+        height: 300px;
+        margin: 10px 2% 20px 2%;
+
+        & img {
+            height: 200px;
+            width: $full;
+            object-fit: cover;
+        }
+    }
+
+    .com_card_restaurant {
+        bottom: $width1;
+    }
+
+    .titres_restaurant {
+        width: 80%;
+        margin-top: 10px;
+
+        & h3 {
+            font-weight: 700;
+            font-size: $width2;
+        }
+
+        & h4 {
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+}

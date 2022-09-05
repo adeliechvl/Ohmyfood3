@@ -1,0 +1,216 @@
+body a {
+    color: $color4;
+}
+
+/* SECTION MENU */
+
+.menu,
+.menu_la_note_enchantée {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: $bgcolor1;
+    position: relative;
+}
+
+.titre_menu {
+    @include flexbaseline;
+
+    & h1 {
+        font-weight: 400;
+        margin-top: 30px;
+    }
+}
+
+/* RESTAURANTS */
+
+.entrées h2,
+.plats h2,
+.desserts h2 {
+    font-weight: 100;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $tertiary_color;
+}
+
+.card_plat {
+    @include flexbetween;
+    margin: 20px 3% 10px 3%;
+    padding-left: 3%;
+    background-color: $bgcolor2;
+    border-radius: $width1;
+    box-shadow: 0 8px 8px 0 rgb(221, 220, 220);
+    overflow: hidden;
+
+    & p {
+        font-weight: 100;
+    }
+
+    & .icon {
+        @include flexcenter;
+        opacity: $none;
+        width: 20%;
+        align-items: center;
+        color: $tertiary_color;
+        background-color: $tertiary_color;
+        border-top-right-radius: $width1;
+        border-bottom-right-radius: $width1;
+        margin-right: -20%;
+    }
+
+    & i {
+        width: $width1;
+        padding: 5px;
+        background-color: $bgcolor2;
+        border-radius: $width1;
+    }
+}
+
+.prix {
+    @include flexcenter;
+    font-weight: 800;
+
+    & p {
+        margin: $none;
+        padding: 30px 10px 0 0;
+        font-weight: 900;
+    }
+}
+
+/* SECTION COMMANDER */
+
+.commander {
+    @include flexcenter;
+    background-color: $bgcolor1;
+}
+
+
+/* ---VERSION TABLETTE--- */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .img_restaurant {
+        height: 300px;
+
+        & img {
+            width: $full;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+
+    /* SECTION MENU */
+
+    .titre_menu {
+        justify-content: center;
+
+        & h1 {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+    }
+
+    .entrées,
+    .plats,
+    .desserts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h2 {
+            width: 80px;
+            font-size: 28px;
+            margin: 30px 0 10px 0;
+        }
+    }
+
+    .card_plat {
+        width: 65%;
+
+        & h3,
+        p {
+            margin: 5px 0 5px 0;
+        }
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & p {
+            font-size: 17px;
+        }
+    }
+
+    .card_plat_com {
+        width: 70%;
+        margin-right: 10%;
+    }
+
+    .prix {
+        font-size: $width1;
+    }
+}
+
+
+/* VERSION DESKTOP */
+
+@media (min-width: 769px) {
+
+    .img_restaurant {
+        height: 400px;
+
+        & img {
+            width: $full;
+            height: 450px;
+            object-fit: cover;
+        }
+    }
+
+    /* SECTION MENU */
+
+    .titre_menu {
+        justify-content: center;
+
+        & h1 {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+    }
+
+    .entrées,
+    .plats,
+    .desserts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h2 {
+            width: 80px;
+            font-size: 28px;
+            margin: 30px 0 10px 0;
+        }
+    }
+
+    .card_plat {
+        width: 50%;
+
+        & h3,
+        p {
+            margin: 5px 0 5px 0;
+        }
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & p {
+            font-size: 17px;
+        }
+    }
+
+    .card_plat_com {
+        width: 75%;
+    }
+
+    .prix p {
+        font-size: 17px;
+    }
+}
