@@ -1,18 +1,50 @@
+/* LOADING SPINNER */
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF80;
+    animation: loadinger 0.1s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+}
+
+.loadingspinner {
+    width: 100px;
+    height: 100px;
+    border: 5px solid $primary-color;
+    border-top: 5px solid $tertiary-color;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out;
+    animation-iteration-count: 3;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadinger {
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
 /* ANIMATION COEUR HOME*/
 
 .icon_coeur_accueil {
     @include flexcenter;
-    align-content: flex-end;
     position: relative;
-}
-
-.input {
-    position: relative;
-    opacity: $none;
-    width: $width1;
-    height: $width1;
-    cursor: pointer;
-    z-index: 3;
 }
 
 .fa-regular.fa-heart {
@@ -42,71 +74,76 @@ input:checked~.fa-solid.fa-heart {
 
 /* VERSION MOBILE */
 
-.icon_coeur_accueil {
-    bottom: 50px;
-    right: 10px;
+@media (max-width: 425px) {
+    
+    .icon_coeur_accueil {
+        left: 35%;
+        bottom: 50px;
+    }
+
+    input {
+        @include input;
+        left: 19px;
+        top: 4px;
+    }
 }
 
-input {
-    left: $width2;
-}
+/* VERSION TABLETTE */
 
-/* VERSIONS TABLETTE */
+@media (min-width: 426px) and (max-width: 768px) {
 
-.icon_coeur_accueil {
-    width: 2px;
-    height: $width2;
-    top: 230px;
-    right: 1%;
-}
+    .icon_coeur_accueil {
+        width: 2px;
+        height: $width2;
+        top: 240px;
+        right: 7%;
+    }
 
-input {
-    left: 20px;
+    input {
+        @include input;
+        left: 20px;
+    }
 }
 
 /* VERSION DESKTOP */
 
-.icon_coeur_accueil {
-    width: 2px;
-    height: $width2;
-    top: 230px;
-    right: 5%;
-}
+@media (min-width: 769px) {
+    
+    .icon_coeur_accueil {
+        width: 2px;
+        height: $width2;
+        top: 230px;
+        right: 5%;
+    }
 
-input {
-    left: 20px;
-}
+    input {
+        @include input;
+        left: 20px;
+    }
 
-input:hover~.fa-regular.fa-heart {
-    transition-duration: .5s;
-    opacity: $none;
-}
+    input:hover~.fa-regular.fa-heart {
+        transition-duration: .5s;
+        opacity: $none;
+    }
 
-input:hover~.fa-solid.fa-heart {
-    transition-duration: .5s;
-    opacity: $opacity;
+    input:hover~.fa-solid.fa-heart {
+        transition-duration: .5s;
+        opacity: $opacity;
+    }
 }
 
 /* ANIMATION COEUR MENUS*/
 
-.card_plat:hover .icon {
-    opacity: $opacity;
-    margin-right: $none;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    cursor: pointer;
+.icon_coeur_page {
+    @include flexcenter;
+    position: relative;
+    top: 30px;
 }
 
-.card_plat:hover i {
-    transform: rotate(360deg);
-    transition-duration: 0.5s;
+input {
+    position: relative;
+    top: 8px;
 }
-
-.card_plat_com {
-    padding: 7px 0 7px 0;
-    overflow-x: hidden;
-}
-
 
 
 
@@ -179,4 +216,24 @@ input:hover~.fa-solid.fa-heart {
         transform: translateY(7px);
         opacity: $none;
     }
+}
+
+/* ANIMATION DEROULEMENT CARDS PAGES MENU */
+
+.card_plat:hover .icon {
+    opacity: $opacity;
+    margin-right: $none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.card_plat:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+.card_plat_com {
+    padding: 7px 0 7px 0;
+    overflow-x: hidden;
 }

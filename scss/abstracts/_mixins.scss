@@ -1,6 +1,6 @@
  @mixin flexcenter {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
  }
 
  @mixin flexbetween {
@@ -17,4 +17,13 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
+ }
+
+ @mixin input {
+   position: relative;
+   opacity: $none;
+   width: $width1;
+   height: $width1;
+   cursor: pointer;
+   z-index: 3;
  }

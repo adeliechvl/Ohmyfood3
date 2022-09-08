@@ -1,3 +1,5 @@
+/* PAGES MENUS */
+
 body a {
     color: $color4;
 }
@@ -64,6 +66,24 @@ body a {
     }
 }
 
+.card_plat:hover .icon {
+    opacity: 1;
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.card_plat:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+.card_plat_com {
+    padding: 7px 0 7px 0;
+    overflow-x: hidden;
+}
+
 .prix {
     @include flexcenter;
     font-weight: 800;
@@ -72,6 +92,59 @@ body a {
         margin: $none;
         padding: 30px 10px 0 0;
         font-weight: 900;
+    }
+}
+
+/* VERSION MOBILE */
+
+@media (max-width: 425px) {
+
+    /* SECTION MENU */
+
+    .titre_menu {
+        justify-content: space-between;
+
+        & h1 {
+            width: 78%;
+            font-size: 25px;
+            padding: 0 0 0 5%;
+        }
+    }
+
+    .entrées,
+    .plats,
+    .desserts {
+        min-height: 280px;
+
+        & h2 {
+            width: 40px;
+            font-size: medium;
+            margin: 30px 5% 10px 5%;
+        }
+    }
+
+    .card_plat h3,
+    .card_plat p {
+        margin: 5px 0 5px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .card_plat h3 {
+        font-size: 16px;
+    }
+
+    .card_plat p {
+        font-size: 12px;
+    }
+
+    .card_plat_com {
+        width: 80%;
+    }
+
+    .prix {
+        font-size: 15px;
     }
 }
 
@@ -128,6 +201,9 @@ body a {
         & h3,
         p {
             margin: 5px 0 5px 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         & h3 {
@@ -137,11 +213,11 @@ body a {
         & p {
             font-size: 17px;
         }
-    }
 
-    .card_plat_com {
-        width: 70%;
-        margin-right: 10%;
+        &_com {
+            width: 70%;
+            margin-right: 10%;
+        }
     }
 
     .prix {
@@ -204,10 +280,10 @@ body a {
         & p {
             font-size: 17px;
         }
-    }
 
-    .card_plat_com {
-        width: 75%;
+        &_com {
+            width: 75%;
+        }
     }
 
     .prix p {

@@ -1,8 +1,9 @@
+/* ACCUEIL */
+
 body {
     margin: 0;
 
     img {
-        width: $full;
         object-fit: cover;
     }
 
@@ -21,9 +22,6 @@ body {
 #localisation div {
     @include flexcenter;
     width: $full;
-}
-
-#localisation div {
     align-items: baseline;
     background-color: #dfdfdf;
     box-shadow: inset 0 3px 3px 0 rgb(180, 179, 179);
@@ -44,7 +42,7 @@ body {
 
 #fonctionnement p {
     padding: 5px 8px 4px 9px;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     color: $bgcolor2;
     border-radius: $width1;
     position: relative;
@@ -70,18 +68,18 @@ body {
     & img {
         border-top-left-radius: $width1;
         border-top-right-radius: $width1;
+        width: $full;
     }
 }
 
-.com_card_restaurant {
-    height: 65px;
+.com_card_restaurant,
+.com_card_restaurant_notnew {
     @include flexbetween;
+    height: 65px;
     position: relative;
 }
 
 .com_card_restaurant_notnew {
-    height: 65px;
-    @include flexbetween;
     margin-top: 10px;
 }
 
@@ -97,10 +95,8 @@ body {
 
 @media (max-width: 425px) {
 
-    /* ELEMENTS DE LA PAGE */
-
     body {
-        width: 425px;
+        width: $full;
     }
 
     /* SECTION LOCALISATION */
@@ -118,15 +114,16 @@ body {
     /* SECTION RESERVER */
 
     .réserver a {
-        width: 80%;
+        @include flexcenter;
+        width: $full;
     }
 
     .titres_réserver h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .titres_réserver p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     /* SECTION FONCTIONNEMENT */
@@ -139,12 +136,10 @@ body {
     .compose,
     .taste {
         margin-bottom: 20px;
-    }
 
-    .choose h3,
-    .compose h3,
-    .taste h3 {
-        font-size: $width1;
+        & h3 {
+            font-size: $width1;
+        }
     }
 
     /* SECTION RESTAURANTS */
@@ -164,16 +159,19 @@ body {
 
     .titres_restaurant {
         width: 60%;
+        padding-left: 5%;
 
         & h3 {
             font-size: 16px;
             font-weight: 700;
             margin-top: 3px;
+            margin-bottom: 5px;
         }
 
         & h4 {
             font-size: 15px;
             font-weight: 300;
+            margin: $none;
         }
     }
 }
@@ -206,7 +204,7 @@ body {
     }
 
     .titres_réserver h1 {
-        font-size: $width1;
+        font-size: $width2;
         margin: $none;
     }
 
@@ -224,7 +222,7 @@ body {
         & h2 {
             width: $full;
             height: 30px;
-            font-size: $width1;
+            font-size: $width2;
             margin: 0 0 20px 0;
         }
     }
@@ -269,17 +267,20 @@ body {
         & h3 {
             font-weight: 700;
             font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: $none;
         }
 
         & h4 {
             font-weight: 300;
             font-size: 18px;
+            margin-top: 5px;
         }
     }
 
     .titres_restaurant h3,
     .titres_restaurant h4 {
-        padding: 0 0 5px 4%;
+        padding: 0 0 5px 5%;
     }
 }
 
@@ -329,7 +330,6 @@ body {
 
         & h2 {
             width: $full;
-            height: 20px;
             font-size: $width2;
             margin-left: 3%;
         }
@@ -365,19 +365,22 @@ body {
     }
 
     .com_card_restaurant {
-        bottom: $width1;
+        bottom: 20px;
     }
 
     .titres_restaurant {
         width: 80%;
-        margin-top: 10px;
+        padding-left: 20px;
 
         & h3 {
             font-weight: 700;
             font-size: $width2;
+            margin-top: 5px;
+            margin-bottom: 0;
         }
 
         & h4 {
+            margin-top: 5px;
             font-weight: 300;
             font-size: 20px;
         }

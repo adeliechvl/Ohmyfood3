@@ -1,9 +1,11 @@
-header {
+/* HEADER */
+
+nav {
     @include flexcenter;
     width: $full;
 }
 
-header a {
+nav a {
     position: relative;
 }
 
@@ -12,7 +14,7 @@ header a {
 
 @media (max-width: 425px) {
 
-    header img {
+    nav img {
         margin-top: 20px;
         width: 170px;
         margin-bottom: 10px;
@@ -29,8 +31,19 @@ header a {
 
     /* ---PAGES RESTAURANTS MOBILE--- */
 
-    header a {
-        right: 18%;
+    nav a {
+        right: 15%;
+        top: 25px;
+    }
+
+    .img_restaurant {
+        height: 215px;
+
+        & img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 
@@ -39,20 +52,20 @@ header a {
 
 @media (min-width: 426px) and (max-width: 768px) {
 
-    header img {
+    nav img {
         margin-top: 20px;
         margin-bottom: 10px;
-        width: 35%;
+        width: 30%;
     }
 
     /* ---PAGES RESTAURANTS TABLETTE---*/
 
-    header i {
+    nav i {
         position: relative;
         top: 20px;
     }
 
-    header a {
+    nav a {
         font-weight: 500;
         font-size: 20px;
         right: 22%;
@@ -65,13 +78,13 @@ header a {
 
 @media (min-width: 769px) {
 
-    header {
+    nav {
         padding: 20px 0 20px 0;
     }
 
     /* PAGES RESTAURANTS DESKTOP */
 
-    header {
+    nav {
         @include flexcenter;
         align-items: center;
         width: $full;
@@ -86,7 +99,7 @@ header a {
         & i {
             margin-top: 20px;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 25px;
             position: relative;
             right: 30%;
             top: 10px;
