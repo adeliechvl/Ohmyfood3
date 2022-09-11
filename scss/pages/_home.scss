@@ -75,7 +75,6 @@ body {
 .com_card_restaurant,
 .com_card_restaurant_notnew {
     @include flexbetween;
-    height: 65px;
     position: relative;
 }
 
@@ -257,11 +256,13 @@ body {
     }
 
     .com_card_restaurant {
-        bottom: 20px;
-        align-content: center;
+        bottom: 25px;
     }
 
     .titres_restaurant {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         width: 75%;
 
         & h3 {
@@ -275,6 +276,7 @@ body {
             font-weight: 300;
             font-size: 18px;
             margin-top: 5px;
+            margin-bottom: 10px;
         }
     }
 

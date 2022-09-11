@@ -20,6 +20,9 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 100%;
 }
 
@@ -45,7 +48,7 @@ nav a {
   /* ---PAGES RESTAURANTS MOBILE--- */
   nav a {
     right: 15%;
-    top: 25px;
+    bottom: 8px;
   }
   .img_restaurant {
     height: 215px;
@@ -62,18 +65,17 @@ nav a {
   nav img {
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 30%;
+    width: 230px;
   }
   /* ---PAGES RESTAURANTS TABLETTE---*/
   nav i {
     position: relative;
-    top: 20px;
   }
   nav a {
     font-weight: 500;
     font-size: 20px;
-    right: 22%;
-    top: 8px;
+    right: 17%;
+    bottom: 12px;
   }
 }
 /* VERSION DESKTOP */
@@ -132,7 +134,7 @@ footer p {
 }
 footer i {
   width: 15px;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .suggest,
@@ -282,10 +284,10 @@ footer i {
 @media (max-width: 425px) {
   .btn_nouveau {
     bottom: 160px;
-    left: 73%;
+    left: 69%;
   }
   .btn_nouveau p {
-    font-size: 4px;
+    font-size: 15px;
     width: 40px;
   }
   .btn_commander {
@@ -322,7 +324,7 @@ footer i {
   .btn_nouveau {
     width: 80px;
     bottom: 190px;
-    left: 70%;
+    left: 3%;
   }
   .btn_nouveau p {
     font-size: small;
@@ -360,7 +362,7 @@ footer i {
   }
   .btn_nouveau {
     bottom: 190px;
-    left: 80%;
+    left: 3%;
   }
   .btn_nouveau p {
     font-size: medium;
@@ -434,14 +436,19 @@ footer i {
     z-index: -1;
   }
 }
+@media (max-width: 425px) {
+  .loading {
+    max-width: 425px;
+  }
+}
 /* ANIMATION COEUR HOME*/
 .icon_coeur_accueil {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   position: relative;
 }
 
@@ -475,8 +482,8 @@ input:checked ~ .fa-solid.fa-heart {
 /* VERSION MOBILE */
 @media (max-width: 425px) {
   .icon_coeur_accueil {
-    left: 35%;
     bottom: 50px;
+    right: 10px;
   }
   input {
     position: relative;
@@ -495,7 +502,7 @@ input:checked ~ .fa-solid.fa-heart {
     width: 2px;
     height: 25px;
     top: 240px;
-    right: 7%;
+    right: 2%;
   }
   input {
     position: relative;
@@ -512,7 +519,7 @@ input:checked ~ .fa-solid.fa-heart {
   .icon_coeur_accueil {
     width: 2px;
     height: 25px;
-    top: 230px;
+    top: 240px;
     right: 5%;
   }
   input {
@@ -544,7 +551,7 @@ input:checked ~ .fa-solid.fa-heart {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: 30px;
+  top: 32px;
 }
 
 input {
@@ -766,7 +773,6 @@ body a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 65px;
   position: relative;
 }
 
@@ -929,11 +935,18 @@ body a {
        object-fit: cover;
   }
   .com_card_restaurant {
-    bottom: 20px;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    bottom: 25px;
   }
   .titres_restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 75%;
   }
   .titres_restaurant h3 {
@@ -946,6 +959,7 @@ body a {
     font-weight: 300;
     font-size: 18px;
     margin-top: 5px;
+    margin-bottom: 10px;
   }
   .titres_restaurant h3,
 .titres_restaurant h4 {
@@ -1182,7 +1196,7 @@ body a {
   .entrées,
 .plats,
 .desserts {
-    min-height: 280px;
+    min-height: 290px;
   }
   .entrées h2,
 .plats h2,
@@ -1202,10 +1216,10 @@ body a {
     font-size: 16px;
   }
   .card_plat p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .card_plat_com {
-    width: 80%;
+    width: 82%;
   }
   .prix {
     font-size: 15px;

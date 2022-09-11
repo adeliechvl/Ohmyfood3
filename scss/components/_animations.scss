@@ -40,10 +40,17 @@
     }
 }
 
+@media (max-width: 425px) {
+    .loading {
+        max-width: 425px;
+    }
+}
+
 /* ANIMATION COEUR HOME*/
 
 .icon_coeur_accueil {
-    @include flexcenter;
+    display: flex;
+    justify-content: end;
     position: relative;
 }
 
@@ -75,10 +82,10 @@ input:checked~.fa-solid.fa-heart {
 /* VERSION MOBILE */
 
 @media (max-width: 425px) {
-    
+
     .icon_coeur_accueil {
-        left: 35%;
         bottom: 50px;
+        right: 10px;
     }
 
     input {
@@ -96,7 +103,7 @@ input:checked~.fa-solid.fa-heart {
         width: 2px;
         height: $width2;
         top: 240px;
-        right: 7%;
+        right: 2%;
     }
 
     input {
@@ -108,11 +115,11 @@ input:checked~.fa-solid.fa-heart {
 /* VERSION DESKTOP */
 
 @media (min-width: 769px) {
-    
+
     .icon_coeur_accueil {
         width: 2px;
         height: $width2;
-        top: 230px;
+        top: 240px;
         right: 5%;
     }
 
@@ -137,7 +144,7 @@ input:checked~.fa-solid.fa-heart {
 .icon_coeur_page {
     @include flexcenter;
     position: relative;
-    top: 30px;
+    top: 32px;
 }
 
 input {

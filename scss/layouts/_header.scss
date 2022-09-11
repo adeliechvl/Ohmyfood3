@@ -2,6 +2,7 @@
 
 nav {
     @include flexcenter;
+    align-items: baseline;
     width: $full;
 }
 
@@ -33,7 +34,7 @@ nav a {
 
     nav a {
         right: 15%;
-        top: 25px;
+        bottom: 8px;
     }
 
     .img_restaurant {
@@ -55,21 +56,20 @@ nav a {
     nav img {
         margin-top: 20px;
         margin-bottom: 10px;
-        width: 30%;
+        width: 230px;
     }
 
     /* ---PAGES RESTAURANTS TABLETTE---*/
 
     nav i {
         position: relative;
-        top: 20px;
     }
 
     nav a {
         font-weight: 500;
         font-size: 20px;
-        right: 22%;
-        top: 8px;
+        right: 17%;
+        bottom: 12px;
     }
 }
 
